@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Title from './Title';
 import POPOSList from './POPOSList';
+import Footer from './Footer'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Title />
       <POPOSList />
       <img src={logo} alt='React Logo' />
+      <Footer />
     </div>
   );
 }
