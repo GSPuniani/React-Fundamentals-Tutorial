@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Title from './Components/Title/Title';
-import POPOSList from './Components/POPOSList';
+import POPOSList from './Components/POPOSList/POPOSList';
 import Footer from './Components/Footer/Footer';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import About from './Components/About/About';
