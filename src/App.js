@@ -6,6 +6,7 @@ import POPOSList from './POPOSList';
 import Footer from './Footer';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import About from './About';
+import POPOSDetails from './POPOSDetails';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <div className="App">
         <Title />
         <Route exact path="/" component={POPOSList}/>
-        <Route path="/about" component={About} />
-        <img src={logo} alt='React Logo' />
+        <Route path="/about" component={About}/>
+        <Route path="/details/:id" component={POPOSDetails}/>
+        <img src={logo} alt='React Logo'/>
         <Footer />
       </div>
     </Router>
