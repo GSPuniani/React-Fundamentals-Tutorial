@@ -1,6 +1,6 @@
 // src/Project.js
 
-import React from 'react'
+import React from 'react';
 import './POPOSSpace.css';
 import { Link } from 'react-router-dom';
 
@@ -13,13 +13,16 @@ function POPOSSpace(props) {
           </Link>
 
           <h1>
-            <Link to={`/details/${id}`}>
+            <Link className="POPOSSpace-title" to={`/details/${id}`}>
               {name}
             </Link>
           </h1>
           
-          <div>{address}</div>
-          <div><i>{hours}</i></div>
+          <div className="POPOSSpace-info">
+            <div>{address}</div>
+            <div><i>{hours}</i></div>
+          </div>
+          
         </div>
     )
 }
